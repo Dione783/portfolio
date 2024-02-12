@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+#root {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  border-left:5px solid greenyellow;
+  border-right: 5px solid greenyellow;
+  border-top: 5px solid rgb(168, 11, 216);
+  border-bottom: 5px solid rgb(168, 11, 216);
+  font-family:Pixelify Sans;
+}
+.App{
+  width: calc(100vw - 10px);
+  height: calc(100vh - 10px);
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+}
+.titulo{
+  grid-row: 1;
+  grid-column: 1/3;
+}

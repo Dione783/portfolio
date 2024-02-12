@@ -1,0 +1,43 @@
+.container{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to bottom,rgb(168, 11, 216),rgb(11, 196, 11));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 400% 400%;
+}
+.box-gradient{
+    background-color: grey;
+    width: 97%;
+    height: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes desacelerar {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -300% 0; /* Ajuste o valor para o deslocamento desejado */
+    }
+  }
+@keyframes characters{
+    0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+.container:hover{
+    animation: characters 1.8s ease infinite;
+}
+
+.box-gradient img{
+    animation: desacelerar 5s steps(10) infinite;
+}
